@@ -417,7 +417,7 @@ let TorLauncherUtil =  // Public
         if (this.isWindows)
         {
           if ("tor" == aTorFileType)
-            path = "TorBrowser\\Tor\\tor.exe";
+            path = "TorBrowser\\Tor\\onions.exe";
           else if ("torrc-defaults" == aTorFileType)
             path = "TorBrowser\\Tor\\torrc-defaults";
           else if ("torrc" == aTorFileType)
@@ -428,7 +428,7 @@ let TorLauncherUtil =  // Public
         else if (this.isMac)
         {
           if ("tor" == aTorFileType)
-            path = "Contents/Resources/TorBrowser/Tor/tor";
+            path = "Contents/Resources/TorBrowser/Tor/onions";
           else if ("torrc-defaults" == aTorFileType)
             path = "Contents/Resources/TorBrowser/Tor/torrc-defaults";
           else if ("torrc" == aTorFileType)
@@ -441,7 +441,7 @@ let TorLauncherUtil =  // Public
         else // Linux and others.
         {
           if ("tor" == aTorFileType)
-            path = "TorBrowser/Tor/tor";
+            path = "TorBrowser/Tor/onions";
           else if ("torrc-defaults" == aTorFileType)
             path = "TorBrowser/Tor/torrc-defaults";
           else if ("torrc" == aTorFileType)
@@ -456,7 +456,7 @@ let TorLauncherUtil =  // Public
       {
         // This block is used for the non-TorBrowser-Data/ case.
         if ("tor" == aTorFileType)
-          path = "Tor\\tor.exe";
+          path = "Tor\\onions.exe";
         else if ("torrc-defaults" == aTorFileType)
           path = "Data\\Tor\\torrc-defaults";
         else if ("torrc" == aTorFileType)
@@ -468,7 +468,7 @@ let TorLauncherUtil =  // Public
       {
         // This block is also used for the non-TorBrowser-Data/ case.
         if ("tor" == aTorFileType)
-          path = "Tor/tor";
+          path = "Tor/onions";
         else if ("torrc-defaults" == aTorFileType)
           path = "Data/Tor/torrc-defaults";
         else if ("torrc" == aTorFileType)
